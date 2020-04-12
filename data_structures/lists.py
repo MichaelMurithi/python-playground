@@ -67,3 +67,7 @@ first_three = names[0:3]
 print(first_three)  # slices the first 3 names
 from_three = names[3:]  # slices the list from index position 3 to the end
 print(from_three)
+
+#To create a full copy of a list,
+
+new_names = names[:] #creates a copy of the names list from the beginning to the end
