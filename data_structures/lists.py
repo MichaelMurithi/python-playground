@@ -59,5 +59,11 @@ names[2] = 'Lindah'
 # .remove(item) removes the first occurence of an item in a list
 names.remove('Eric')
 # .pop() removes the last item in a list and returns the removed item
-#it can take the number of items to be removed from the list as the argument
+# it can take the number of items to be removed from the list as the argument
 names.pop()
+
+# to slice an element in a list
+first_three = names[0:3]
+print(first_three)  # slices the first 3 names
+from_three = names[3:]  # slices the list from index position 3 to the end
+print(from_three)
