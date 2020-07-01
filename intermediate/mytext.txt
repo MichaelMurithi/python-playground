@@ -1,0 +1,5 @@
+Hello, I am learning Python,
+Learning how to read and write files,
+Python is amazing,
+Let me try,
+Copying this file to another file.
