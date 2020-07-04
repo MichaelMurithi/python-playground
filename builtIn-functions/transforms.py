@@ -45,6 +45,7 @@ def main():
     sortedScores = reversed(sorted(scores))
     grades = list(map(getGrade, sortedScores))
     print(grades)
+    
 
 if __name__ == "__main__":
     main()
