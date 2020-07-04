@@ -15,25 +15,25 @@ class Employee():
             return self.seniority >= other.seniority
         return self.level >=other.level
     
-    def __gt__(self, other):
+    def __gt__(self, other): #greater than
         if self.level == other.level:
             return self.seniority > other.seniority
         return self.level > other.level
 
 
-    def __lt__(self, other):
+    def __lt__(self, other): #less than
         if self.level == other.level:
             return self.seniority < other.seniority
         return self.level < other.level
 
 
-    def __le__(self, other):
+    def __le__(self, other): #less than or equal to
         if self.level == other.level:
             return self.seniority <= other.seniority
         return self.level <= other.level
 
 
-    def __eq__(self, other):
+    def __eq__(self, other): #equal to
         return self.level == other.level
 
 
