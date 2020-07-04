@@ -29,18 +29,20 @@ class myColor():
 
 def main():
     # create an instance of myColor
-    cls1 = myColor()
+    color1 = myColor()
     # TODO: print the value of a computed attribute
-    print(cls1.rgbcolor)
-    print(cls1.hexcolor)
+    print(color1.rgbcolor)
+    print(color1.hexcolor)
+    print(color1.hexcol)
+    
     # TODO: set the value of a computed attribute
-    cls1.rgbcolor = (250,10,16)
-    print(cls1.rgbcolor)
-    print(cls1.hexcolor)
+    color1.rgbcolor = (250,10,16)
+    print(color1.rgbcolor)
+    print(color1.hexcolor)
     # TODO: access a regular attribute
-    print(cls1.red)
+    print(color1.red)
     # TODO: list the available attributes
-    print(dir(cls1))
+    print(dir(color1))
 
 if __name__ == "__main__":
     main()
