@@ -1,4 +1,5 @@
 # defaultdict takes a factory method and returns a default value for a key which is not available in a list
+
 # Demonstrate the usage of defaultdict objects
 
 from collections import defaultdict
