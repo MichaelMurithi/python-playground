@@ -1,0 +1,20 @@
+** Logging overview **
+- Involves capturing and recording events while the app is running
+- It is a useful debugging feature
+- Not usefull to debug in real time
+- Events can be categorised for easier analysis
+- Provides transaction record of a program's execution
+- Highly customizable output
+
+** The Logging module **
+
+The logging module has the following options
+- logging.debug('Debug level message') - general information used for debugging
+- logging.info('Info level message') - General information  about program execution results
+- logging.warning('Warning level message') -Something unexpected or an approaching problem
+- logging.error('Error level message') - Unable to perform a specific operation due to problem      
+- logging.critical('critical level message') - critical error and program may not be able to proceed.
+
+** Logging configuration **
+- logging.basicConfig() - takes configurations to set the logging level,
+ filename to log output and other configurations.
