@@ -16,6 +16,7 @@ class Child(Parents):
         print("Property Porsche purchased by Child **")
 
 
+
 first_born = Child()
 first_born.PropertyLand()
 first_born.PropertyHome()
