@@ -68,8 +68,6 @@ class Salesman(CommissionEmployee):
     def work(self,hours):
         print(f"{self.name} as salesman is handling the client calls for {hours} hours")
 
-
 class Worker(PartTimeEmployee):
     def work(self,hours):
         print(f"{self.name} as worker has completed his tasks in {hours} hours")
-
