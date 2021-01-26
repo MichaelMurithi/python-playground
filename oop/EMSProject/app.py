@@ -1,10 +1,13 @@
-import payroll,employees,employeemanagement
-
+import payroll
+import employees
+import employeemanagement
+import shipments
 # salariedEmp = employees.SalaryEmployee(101,'Sekhar',1000) #creates an instance of a salaried employee
 # partimeEmp = employees.PartTimeEmployee(102,'Michael',40,500) #creates an instance of a part time employee
 # commisionEmp = employees.CommissionEmployee(103,'Maryam',1000,1500) #creates an instance of a commision based employee
 
 manager = employees.Manager(101,'Sekhar',1000)
+manager.address = shipments.Address('Stare Grunty 36','Bratislava','Slovakia','84104','Karlova ves')
 developer = employees.Developer(102,'Michael',2500) 
 salesman = employees.Salesman(103,'Maryam',1000,1500) 
 cleaner = employees.Worker(103,'Wafula',10,250) 
