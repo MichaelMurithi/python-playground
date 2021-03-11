@@ -27,3 +27,4 @@ print(student.keys())
 print(student.values())
 # .items() method returns a turple of items in a dictionary
 print(student.items())
+

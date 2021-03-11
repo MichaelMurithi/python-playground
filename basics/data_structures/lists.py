@@ -13,13 +13,14 @@ for name in names:  # Prints all the elements in a list
 # len(list) is used to get the number of items in a list
 
 print(len(names))  # prints the number of elements in a list
+
 # Sorting Lists
 
 lottery_numbers = [11, 2, 3334, 23, 122, 33344, 7665]
 
 # sorted can be used to sort lists. It takes the list, and an optional boolean argument reverse
 sortedNums = sorted(lottery_numbers, reverse=True)
-print(sortedNums)
+print(f"Using sorted() {sortedNums}")
 
 # .sort() method can be used to sort data in a list in ascending order. It does not make a copy of the list
 lottery_numbers.sort()
