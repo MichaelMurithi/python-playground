@@ -1,3 +1,4 @@
 .vscode-janus-debug
 .vscode/
 env/
+.venv/
