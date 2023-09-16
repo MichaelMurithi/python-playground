@@ -1,8 +1,10 @@
+from datetime import timedelta
+
 from blog.database import get_db
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 
-from .. import models, schemas
+from .. import models, schemas, token
 from ..hashing import Hash
 
 router = APIRouter(
@@ -22,5 +24,6 @@ def login(request: schemas.Login, db: Session = Depends(get_db)):
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
                             detail=f'Incorrect password')
 
-    # generate a jwt token and return it
-    return user
+    access_token = token.create_access_token(data={"sub": user.email})
+
+    return {"access_token": access_token, "token_type": "bearer"}
