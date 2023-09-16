@@ -2,6 +2,7 @@ from typing import List
 
 from blog import schemas
 from blog.database import SessionLocal, get_db
+from blog.oauth2 import get_current_user
 from blog.repository import blog
 from fastapi import APIRouter, Depends, status
 from sqlalchemy.orm import Session
@@ -13,7 +14,7 @@ router = APIRouter(
 
 
 @router.get('/', response_model=List[schemas.ShowBlog])
-def get_all_blogs(db: SessionLocal = Depends(get_db)):
+def get_all_blogs(db: SessionLocal = Depends(get_db), current_user: schemas.User = Depends(get_current_user)):
     return blog.get_all(db)
 
 
