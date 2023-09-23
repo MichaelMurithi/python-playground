@@ -7,11 +7,11 @@ from langchain.llms import OpenAI
 from langchain.vectorstores.cassandra import Cassandra
 
 ASTRA_DB_SECURE_BUNDLE_PATH = "./secure-connect-vector-database.zip"
-ASTRA_DB_APPLICATION_TOKEN = "AstraCS:ZTgTuwAtcfhmoZiOMJsfTqtG:3dd86b0a38ad3551d84604029a434a049526827788c4595dae9ba5df0caf9f50"
-ASTRA_DB_CLIENT_ID = "ZTgTuwAtcfhmoZiOMJsfTqtG"
-ASTRA_DB_CLIENT_SECRET = "9mJgb2FESGCU9jdLR9B.W_LzU0qa+6nCak0w_AQsb+ZnXHjOW-radUtjzQA3ChAWCxYb_t.KDykw3kmvGCN2-x2wnpbU9ysIXvwiFiXRnJ,SxIPUadq-kIIUPw4QlbQ0"
-ASTRA_DB_KEYSPACE = "search"
-OPENAI_API_KEY = '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'
+ASTRA_DB_APPLICATION_TOKEN = ""
+ASTRA_DB_CLIENT_ID = ""
+ASTRA_DB_CLIENT_SECRET = ""
+ASTRA_DB_KEYSPACE = ""
+OPENAI_API_KEY = ''
 
 cloud_config = {
     'secure_connect_bundle': ASTRA_DB_SECURE_BUNDLE_PATH
